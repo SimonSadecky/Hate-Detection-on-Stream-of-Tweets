@@ -16,7 +16,7 @@ import re
 
 def outToCSV(text):	
 
-	with open('TwitterHateData.csv','a', encoding="utf-8", newline='') as of:
+	with open('HateTweets.csv','a', encoding="utf-8", newline='') as of:
 		writer = csv.writer(of, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 		writer.writerow(['1', text])
 	of.close()
